@@ -1,5 +1,5 @@
 import java.util.*;
-class Database{
+public class Database{
 
 public static void bankAccount(){
     System.out.println("Welcome");
@@ -19,15 +19,21 @@ public static void bankAccount(){
         double balance = in.nextDouble();
         balances[i] = balance;
         i++;
-    } else if (input.equals("d")){
+    } 
+    
+    else if (input.equals("d")){
         System.out.println("Please enter the name to see the balance: ");
         String name = in.nextLine();
         double outbalance = balances[Arrays.asList(names).indexOf(name)];
         System.out.printf("Balance for " + name + " is $" + outbalance %.3f);
-    } else if (input.equals("q")){
+    } 
+    
+    else if (input.equals("q")){
         System.out.println("Thank you");
         break;
-    } else {
+    } 
+    
+    else {
         System.out.println("Invalid Input");
     }
     }
