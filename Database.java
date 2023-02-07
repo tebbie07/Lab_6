@@ -23,7 +23,8 @@ public static void bankAccount(){
         System.out.println("Please enter the name to see the balance: ");
         String name = in.nextLine();
         double outbalance = balances[Arrays.asList(names).indexOf(name)];
-        System.out.printf("Balance for " + name + " is $" + outbalance %.3f);
+        //changed formatting to money format
+        System.out.printf("Balance for " + name + " is $" + "%.2f ",outbalance);
     } else if (input.equals("q")){
         System.out.println("Thank you");
         break;
@@ -32,6 +33,10 @@ public static void bankAccount(){
     }
     }
 
+}
+//added main method
+public static void main(String[] args){
+    bankAccount();
 }
 
 }
